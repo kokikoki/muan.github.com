@@ -8,7 +8,7 @@ layout: index
     <a href="{{ post.url }}" class="post-link post-title">
       {{ post.title }}<br />
       <small class="meta">
-        <time>{{ post.date | date_to_string }}</time>
+        <time>{{ post.date | date: "%Y年%m月%d日" }}</time>
       </small>
     </a>
   </li>

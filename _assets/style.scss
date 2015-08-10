@@ -6,6 +6,11 @@ body {
   background-color: #fff;
 }
 
+h2 {
+  padding-bottom: 0.2em;
+  border-bottom: solid 1px #e8e8e8;
+}
+
 a {
   color: #8f65ca;
   text-decoration: none;
@@ -38,7 +43,7 @@ a {
 
 .instagram {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   height: 140px;
   .img {
     &:hover {

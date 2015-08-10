@@ -16,10 +16,11 @@ $(document).on "ready pjax:end", ->
   if window.pics
     putImages(pics)
   else
-    feed = "https://api.instagram.com/v1/users/10647409/media/recent/?count=30&client_id=14deafa2ddeb4ce1a521c97844ca8e6b&callback=?"
+    feed = "https://api.instagram.com/v1/users/3661639/media/recent/?count=30&client_id=14deafa2ddeb4ce1a521c97844ca8e6b&callback=?"
     $.getJSON feed, (data) ->
       window.pics = data.data.filter (pic)->
-        pic.tags.length > 0 && pic.tags.indexOf("_") >= 0
+        pic
+#        pic.tags.length > 0 && pic.tags.indexOf("_") >= 0
       putImages(pics)
 
 load = ->

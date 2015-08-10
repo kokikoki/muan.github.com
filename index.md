@@ -2,21 +2,17 @@
 layout: about
 ---
 
-**Mu-An Chiou**<br />
-Designer at [GitHub](https://github.com/about), co-founder of [Zeczec](http://zeczec.com).
+##Gyunyubin<br />
 
-Currently traveling from Taipei.
+day in, day out
+
 
 ---
 
 <div class="links">
-<a href="https://github.com/muan" target="_blank">GitHub</a>
+<a href="https://github.com/kokikoki" target="_blank">GitHub</a>
 
-<a href="https://twitter.com/muanchiou" target="_blank">Twitter</a>
-
-<a href="http://dribbble.com/muan" target="_blank">Dribbble</a>
-
-<a href="http://speakerdeck.com/muan" target="_blank">Speakerdeck</a>
+<a href="https://twitter.com/kokikokikoki" target="_blank">Twitter</a>
 
 <a href="/feed.xml" target="_blank">Blog feed</a>
 </div>

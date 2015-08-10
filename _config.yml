@@ -1,10 +1,22 @@
-title:            "@muanchiou"
-url:              http://muan.co
+title:            "@koki"
+url:              http://blog.condesire.com
 permalink:        pretty
 highlighter:      pygments
 markdown:         kramdown
-google_analytics: UA-21332781-7
-timezone:         Europe/London
+google_analytics: UA-49755179-1
+timezone:         Japan/Tokyo
 gems:
   - jemoji
   - jekyll-mentions
+
+destination: ../result
+
+kramdown:
+  use_coderay: true
+
+  coderay:
+    coderay_line_numbers: nil
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
