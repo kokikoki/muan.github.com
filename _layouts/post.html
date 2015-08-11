@@ -9,16 +9,23 @@
 
       <section class="content">
         <div class="container">
-          <article>
+          <article class="post">
             <header class="post-header">
 
-              <div class="post-title">{{ page.title }}</div>
+              <h1 class="post-title">{{ page.title }}</h1>
               {% if page.date %}
                 <small class="meta">
                   {{ page.date | date: "%Y年%m月%d日" }}
                   <!-&#45;&#45;-->
                   <!--by <a href="https://twitter.com/kokikokikoki" target="_blank">@kokikokikoki</a>-->
                 </small>
+              <div class="post_sns">
+                <a target="_blank" href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}"><i class="sns-font">y</i></a>
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}"><i class="sns-font">e</i></a>
+                <a target="_blank" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}"><i class="sns-font">i</i></a>
+                <a target="_blank" href="http://getpocket.com/edit?url={{ site.url }}{{ page.url }}"><i class="sns-font">t</i></a>
+                <a target="_blank" href="http://b.hatena.ne.jp/add?url={{ site.url }}{{ page.url }}"><i class="sns-font">4</i></a>
+              </div>
                 <div class="pagination">
                   {% if page.previous %}
                     <a class="page-nav previous" {% if page.previous %}href="{{ page.previous.url }}" id="js-previous-post"{% endif %}>
@@ -35,6 +42,26 @@
             </header>
             {{ content }}
           </article>
+
+
+
+          <div class="post_comment">
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+              /* * * CONFIGURATION VARIABLES * * */
+              var disqus_shortname = 'blogcondesirecom';
+
+              /* * * DON'T EDIT BELOW THIS LINE * * */
+              (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+          </div>
+
+
         </div>
       </section>
 

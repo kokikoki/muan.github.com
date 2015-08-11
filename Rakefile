@@ -15,7 +15,7 @@ task :default do
   pids = [
       spawn("jekyll server -w"),
       spawn("scss --watch _assets:assets"),
-      spawn("coffee -b -w -o assets -c _assets/*.coffee")
+      spawn("coffee -b -w -o assets/js -c _assets/js/*.coffee")
   ]
 
   trap "INT" do

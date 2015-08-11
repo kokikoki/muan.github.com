@@ -2,7 +2,7 @@
 layout: about
 ---
 
-##Gyunyubin<br />
+#Gyunyubin<br />
 
 day in, day out
 
