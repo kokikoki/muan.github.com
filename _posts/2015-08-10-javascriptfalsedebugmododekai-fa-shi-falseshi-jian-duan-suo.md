@@ -18,29 +18,21 @@ JavaScriptで、開発時に既に確認済みのシーケンス(オープニン
 開発時は、確認までの時間短縮をするためにデバッグモードを追加します。<br />
 デバッグモードの分岐処理で、既に確認済みの処理を短縮します。
 
-<br />
-<br />
 
 ##仕様
 
 下記のURLにアクセスすることでデバッグモードの切替をすることにします。
-<br />
-<br />
 
 ####デバッグ開発時
 ~~~url
 http://localhost/?d=1
 ~~~
 
-<br />
-
 ####完全な動作確認を行うとき
 
 ~~~url
 http://localhost/?d=0
 ~~~
-
-<br />
 
 ## 準備
 [https://github.com/carhartl/jquery-cookie](https://github.com/carhartl/jquery-cookie)
@@ -65,8 +57,6 @@ var debugMode = function () {
     return debugMode || 0;
 };
 ~~~
-
-<br />
 
 ## 実装 
 

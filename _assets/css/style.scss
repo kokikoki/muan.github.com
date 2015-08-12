@@ -19,6 +19,9 @@ body {
   font-size: 16px;
   background-color: #fff;
 }
+* { -o-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
 /* =========================================================
   group head
 ============================================================ */
@@ -28,12 +31,15 @@ body {
     font-weight: normal;
   }
   h2 {
+    margin-top: 2em;
     font-size: 22px;
     padding-bottom: 0.2em;
     font-weight: normal;
     border-bottom: solid 1px #eee;
   }
   h3, h4, h5, h6 {
+    text-decoration: none;
+    margin-top: 1.8em;
     //padding-left: 12px;
     font-weight: normal;
     &:before {
@@ -41,6 +47,11 @@ body {
       padding-left: 12px;
       border-left: solid 3px #eee;
     }
+  }
+  img {
+    margin-bottom: 1em;
+    max-width: 100%;
+    height: auto;
   }
 }
 /* =========================================================
@@ -175,18 +186,6 @@ a {
 }
 .post_comment {
   margin-top: 100px;
-}
-article {
-  img {
-    max-width: 100%;
-  }
-  h3 {
-    border-bottom: 1px solid #777;
-    line-height: 0.9em;
-    display: inline-block;
-    // so hip
-    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff;
-  }
 }
 .a-cat, .a-house, .a-person, .a-page {
   display: inline-block;

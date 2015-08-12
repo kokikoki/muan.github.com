@@ -46,6 +46,7 @@ GEM
     jekyll-mentions (0.0.4)
       html-pipeline (~> 1.5.0)
       jekyll (~> 1.4.3)
+    jekyll-sitemap (0.8.1)
     jemoji (0.0.8)
       gemoji
       html-pipeline
@@ -92,6 +93,7 @@ DEPENDENCIES
   coderay
   github-pages
   jekyll-mentions
+  jekyll-sitemap
   jemoji
   sass
   stringex
