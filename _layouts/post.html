@@ -40,7 +40,9 @@
                 </div>
               {% endif %}
             </header>
-            {{ content }}
+            <div class="post_content">
+				{{ content | toc_generate }}
+            </div>
           </article>
 
 
