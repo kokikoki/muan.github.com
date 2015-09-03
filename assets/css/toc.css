@@ -60,13 +60,37 @@
 #toc a {
     font-size: 13px;
     color:#444;
-    line-height: 1.6;
+    line-height: 2.0;
 }
 
+#toc a {
+    position: relative;
+    padding: 7px;
+    word-break: break-word;
+    transition: 0.1s ease;
+}
+#toc a:hover {
+    background-color: #e4e4e4;
+}
 #toc-container {
 	margin-bottom: 10px;
 }
 
 #toctitle {
     display: none;
+}
+
+@media (max-width: 1280px) {
+    #toc-container {
+        position: static !important;
+        top: 0 !important;
+        left: 0;
+        right: auto;
+        margin-left: 0;
+    }
+}
+@media (max-width: 480px) {
+    #toc-container {
+        width: 100%;
+    }
 }

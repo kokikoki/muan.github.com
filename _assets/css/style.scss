@@ -69,6 +69,17 @@ body {
       font-weight: bold;
       border-bottom: solid 1px #eee;
     }
+
+    table {
+      th,
+      td {
+        padding: 8px 10px;
+        border: solid 1px #eee;
+      }
+      th {
+        background-color: #eee;
+      }
+    }
   }
 }
 /* =========================================================
@@ -163,6 +174,12 @@ a {
 .meta {
   font-size: 9px;
   &, * { color: #a0a0a0; }
+  & a {
+    transition: 0.2s ease;
+  }
+  & a:hover {
+    color: #444;
+  }
 }
 /* =========================================================
   group post
@@ -199,6 +216,10 @@ a {
     font-style: normal;
     font-size: 30px;
     color: #ccc;
+    transition: 0.2s ease;
+    &:hover {
+      color: #999;
+    }
   }
 }
 .post_comment {
@@ -465,6 +486,11 @@ hr {
       border-bottom-color: #d8badc;
       border-left-color: #d8badc;
     }
+  }
+}
+@media (max-width: 1280px) {
+  .wrapper {
+    overflow: hidden;
   }
 }
 @media (max-width: 480px) {

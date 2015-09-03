@@ -63,6 +63,12 @@ body {
     padding-bottom: 0.2em;
     font-weight: bold;
     border-bottom: solid 1px #eee; }
+  .post_content table th,
+  .post_content table td {
+    padding: 8px 10px;
+    border: solid 1px #eee; }
+  .post_content table th {
+    background-color: #eee; }
 
 /* =========================================================
   group header
@@ -143,6 +149,10 @@ a {
   font-size: 9px; }
   .meta, .meta * {
     color: #a0a0a0; }
+  .meta a {
+    transition: 0.2s ease; }
+  .meta a:hover {
+    color: #444; }
 
 /* =========================================================
   group post
@@ -178,7 +188,10 @@ a {
     margin: 0 1px;
     font-style: normal;
     font-size: 30px;
-    color: #ccc; }
+    color: #ccc;
+    transition: 0.2s ease; }
+    .post_sns a:hover {
+      color: #999; }
 
 .post_comment {
   margin-top: 100px; }
@@ -432,6 +445,9 @@ hr {
       border-bottom-color: #d8badc;
       border-left-color: #d8badc; }
 
+@media (max-width: 1280px) {
+  .wrapper {
+    overflow: hidden; } }
 @media (max-width: 480px) {
   .links a {
     width: auto;
