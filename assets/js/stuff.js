@@ -23,7 +23,7 @@ $(document).on("ready pjax:end", function() {
   if (window.pics) {
     return putImages(pics);
   } else {
-    feed = "https://api.instagram.com/v1/users/3661639/media/recent/?count=30&client_id=14deafa2ddeb4ce1a521c97844ca8e6b&callback=?";
+    feed = 'https://api.instagram.com/v1/users/3661639/media/recent/?access_token=3661639.4d74fdc.0c4264e326e247edb1beca72b4f06580&count=10&callback=?';
     return $.getJSON(feed, function(data) {
       window.pics = data.data.filter(function(pic) {
         return pic;
