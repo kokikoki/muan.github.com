@@ -21,9 +21,9 @@
 
     position: absolute;
     top: 0;
-    width: 320px;
+    width: 270px;
     left: 50%;
-    margin-left: 340px;
+    margin-left: 370px;
 }
 #toc, .toc, .mw-warning {
     font-size: 95%;
@@ -75,6 +75,9 @@
 #toc-container {
 	margin-bottom: 10px;
 }
+#toc td {
+    border: none;
+}
 
 #toctitle {
     display: none;
@@ -82,6 +85,7 @@
 
 @media (max-width: 1280px) {
     #toc-container {
+        width: 370px;
         position: static !important;
         top: 0 !important;
         left: 0;

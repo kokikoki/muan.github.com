@@ -5,6 +5,7 @@ highlighter:      pygments
 markdown:         kramdown
 google_analytics: UA-49755179-1
 timezone:         Japan/Tokyo
+port: 5000
 gems:
   - jemoji
   - jekyll-mentions

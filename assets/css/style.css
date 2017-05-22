@@ -12,12 +12,12 @@ i {
   font-family: "sns-font", sans-serif; }
 
 body {
-  line-height: 1.75em;
-  font-family: Merriweather, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", Verdana, sans-serif;
+  line-height: 1.8em;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Droid Sans,Verdana,Arial,Hiragino Sans,\\30D2\30E9\30AE\30CE\89D2\30B4 ProN W3,Hiragino Kaku Gothic ProN,\\30E1\30A4\30EA\30AA,Meiryo,sans-serif;
   font-weight: 400;
   font-size: 16px;
   background-color: #fff;
-  color: #444; }
+  color: #555; }
 
 * {
   -o-box-sizing: border-box;
@@ -30,12 +30,13 @@ body {
   group head
 ============================================================ */
 .post h1 {
+  margin-top: 2em;
   font-size: 26px;
   font-weight: normal; }
 .post h2 {
   margin-top: 2em;
   font-size: 22px;
-  padding-bottom: 0.2em;
+  padding-bottom: 0.5em;
   font-weight: bold;
   border-bottom: solid 1px #eee; }
 .post h3, .post h4, .post h5, .post h6 {
@@ -60,9 +61,9 @@ body {
   position: relative; }
   .post_content h1 {
     font-size: 26px;
-    padding-bottom: 0.2em;
+    padding-bottom: 0.4em;
     font-weight: bold;
-    border-bottom: solid 1px #eee; }
+    border-bottom: solid 1px #f4f4f4; }
   .post_content table th,
   .post_content table td {
     padding: 8px 10px;
@@ -129,7 +130,7 @@ a {
     height: 140px; }
 
 .wrapper {
-  max-width: 700px;
+  max-width: 670px;
   width: 100%;
   margin: auto; }
 

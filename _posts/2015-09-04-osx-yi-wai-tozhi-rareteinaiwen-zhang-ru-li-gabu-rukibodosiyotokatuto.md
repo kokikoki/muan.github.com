@@ -11,8 +11,6 @@ comments: true
 share: true
 ---
 
-![](/images/2015/09/file0001038277754.jpg)
-
 MacよりMacintoshのほうがなんとなくカッコいいです。だからMacintoshと呼びたい。
 
 まだMac使い始めて４年くらいなのですが、使えば使うほどに便利に感じます。
