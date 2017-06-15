@@ -94,7 +94,7 @@ end
 
 task :deploy do
   sh "jekyll build -d ../result"
-  sh 'rsync -e "ssh -p 10022" -avz --delete ../result/ koki@condesire.com:/home/koki/html/blog.condesire.com/'
+  sh 'rsync -e "ssh -p 10022" -avz --delete ../result/ koki@sakura69:/home/koki/html/blog.condesire.com/'
 end
 
 def get_stdin(message)

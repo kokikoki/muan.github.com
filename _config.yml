@@ -1,10 +1,10 @@
-title:            "@kokikokikoki"
+title:            "blog.condesire.com"
 url:              http://blog.condesire.com
 permalink:        pretty
 highlighter:      pygments
 markdown:         kramdown
 google_analytics: UA-49755179-1
-timezone:         Japan/Tokyo
+timezone:         Asia/Tokyo
 port: 5000
 gems:
   - jemoji
@@ -12,12 +12,13 @@ gems:
 
 destination: ../result
 
-kramdown:
-  use_coderay: true
 
-  coderay:
-    coderay_line_numbers: nil
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+kramdown:
+  syntax_highlighter: coderay
+  enable_coderay: true
+  syntax_highlighter_opts:
+#    line_numbers: nil
+#    line_numbers_start: 1
+#    tab_width: 4
+#    bold_every: 10
+#    css: class

@@ -13,24 +13,15 @@ $(document).on "click", "a:not([id])", (e) ->
 # $(document).pjax 'a', '.wrapper', { fragment: 'body', timeout: 3000 }
 
 $(document).on "ready pjax:end", ->
-  if window.pics
-    putImages(pics)
-  else
-    feed = "https://api.instagram.com/v1/users/3661639/media/recent/?count=30&client_id=14deafa2ddeb4ce1a521c97844ca8e6b&callback=?"
-    $.getJSON feed, (data) ->
-      window.pics = data.data.filter (pic)->
-        pic
-#        pic.tags.length > 0 && pic.tags.indexOf("_") >= 0
-      putImages(pics)
+  putImages()
 
 load = ->
   $(".img img").on "load", ->
     $(this).closest(".img").addClass("show")
 
 putImages = (pics) ->
-  pic = pics[Math.floor(Math.random() * pics.length)]
   box = $(".instagram")
   box.html ""
-  box.append "<a target='_blank' href='#{pic.link}' class=img><img src='#{pic.images.low_resolution.url}'></div>"
+  box.append "<div class=img><img src='/images/face.jpg'></div>"
 
   load()

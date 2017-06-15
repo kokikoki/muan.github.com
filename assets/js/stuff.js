@@ -19,18 +19,7 @@ $(document).on("click", "a:not([id])", function(e) {
 });
 
 $(document).on("ready pjax:end", function() {
-  var feed;
-  if (window.pics) {
-    return putImages(pics);
-  } else {
-    feed = "https://api.instagram.com/v1/users/3661639/media/recent/?count=30&client_id=14deafa2ddeb4ce1a521c97844ca8e6b&callback=?";
-    return $.getJSON(feed, function(data) {
-      window.pics = data.data.filter(function(pic) {
-        return pic;
-      });
-      return putImages(pics);
-    });
-  }
+  return putImages();
 });
 
 load = function() {
@@ -40,10 +29,9 @@ load = function() {
 };
 
 putImages = function(pics) {
-  var box, pic;
-  pic = pics[Math.floor(Math.random() * pics.length)];
+  var box;
   box = $(".instagram");
   box.html("");
-  box.append("<a target='_blank' href='" + pic.link + "' class=img><img src='" + pic.images.low_resolution.url + "'></div>");
+  box.append("<div class=img><img src='/images/face.jpg'></div>");
   return load();
 };
